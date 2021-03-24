@@ -434,6 +434,13 @@
 .close__snackbar{
     cursor: pointer;
 }
+/* BACKGROUND COLOR UTILITIES */
+.bg-dark{
+    background-color: var(--background-primary);
+}
+.bg-light {
+    background-color: var(--text);
+}
 @media screen and (min-width : 768px) {
     /* ALERT */
     .alert{
