@@ -9,7 +9,7 @@
     --text : #e2e2e2;
     --white : #ffffff;
     --floating : #1de5ce;
-    --snackbar-secondary : orange;
+    --orange : orange;
     --text-muted : rgb(161, 161, 161);
     --black : black;
     --off-white : #d2c9c9;
@@ -429,17 +429,38 @@
 .snackbar__secondary{
     background-color: var(--background-gray);
     color: var(--text);
-    color: var(--snackbar-secondary);
+    color: var(--orange);
 }
 .close__snackbar{
     cursor: pointer;
 }
-/* BACKGROUND COLOR UTILITIES */
+/* COLOR UTILITIES */
 .bg-dark{
     background-color: var(--background-primary);
 }
 .bg-light {
     background-color: var(--text);
+}
+.text-light {
+    color: var(--text);
+}
+.text-dark {
+    color: var(--black);
+}
+.text-primary {
+    color : var(--primary)
+}
+.text-success {
+    color : var(--success)
+}
+.text-danger {
+    color : var(--danger)
+}
+.text-warning {
+    color : var(--warning)
+}
+.text-headings {
+    color : var(--orange)
 }
 @media screen and (min-width : 768px) {
     /* ALERT */
