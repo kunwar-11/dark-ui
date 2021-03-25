@@ -142,11 +142,17 @@
 }
 /* ICONS and FLOATING ACTION BUTTON */
 .icon{
-    border: none;
-    background-color: transparent;
-    width: 30px;
-    height: 30px;
-
+    display: flex;
+    align-items: center;
+}
+.icon-text{
+    padding-left: 0.5rem;
+}
+.icon-only{
+    cursor: pointer;
+}
+.icon-only:hover{
+    color: var(--orange);
 }
 .floating-action{
     padding: 0.3rem 0.4rem;
@@ -171,6 +177,9 @@
 .badge__on__avatar{
     display: inline-block;
     position: relative;
+}.badge__on__avatar,.badge-on-icon{
+    display: inline-block;
+    position: relative;
 }
 .badge-round{
     width: 11px;
@@ -179,6 +188,11 @@
     position: absolute;
     bottom: 5px;
     right: 0;
+}
+.badge-notification{
+    position: absolute;
+    top: -5px;
+    left: 5px;
 }
 .badge-round-2x{
     width: 15px;
@@ -251,7 +265,6 @@
 }
 .card__horizontal__img{
     flex-grow: 2;
-    margin-right: 0.5rem;
 }
 .card__shadow{
     box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
